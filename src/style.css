@@ -15,9 +15,9 @@
     --font-gotham: 'Montserrat', sans-serif;
     --font-romie: 'Forum', serif;
     }
-};
+}
 
-:root[data-theme="inline"] {
+@theme inline {
   --color-fushia: var(--clr-pink);
   --color-bleuclair: var(--clr-indigo);  
   --color-bleu: var(--clr-dark);
