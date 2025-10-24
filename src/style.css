@@ -17,7 +17,7 @@
     }
 };
 
-@theme inline {
+:root[data-theme="inline"] {
   --color-fushia: var(--clr-pink);
   --color-bleuclair: var(--clr-indigo);  
   --color-bleu: var(--clr-dark);
