@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Adop - Cosmétiques</title>
-  <link rel="stylesheet" href="/src/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monoi Des Îles - Adopt</title>
+  <link rel="stylesheet" href="../src/style.css">
 </head>
 <body>
 <!-- Header principal -->
@@ -68,164 +68,83 @@
     </div>
 </header>
 
-<!-- Section visuel produit -->
-<section class=" relative w-full h-[600px] flex items-center justify-center">
-    <img src="/assets/image 4.png" alt="Click and Collect" class="w-full h-full object-cover brightness-75"/>
 
-  <div class="absolute bottom-10 left-10 text-left">
-    <h2 class="text-fushia text-5xl font-secondary mb-2">Click & Collect</h2>
-    <p class="text-fushia text-2xl font-primary">Réservez En Ligne, Récupérez En Boutique.</p>
-  </div>
-</section>
-
-  <main class="bg-white">
-    <section class="max-w-7xl mx-auto px-6 md:px-12 py-16">
-
-      <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-10">
-        <h2 class="text-2xl md:text-3xl font-secondary text-bleu mb-4 md:mb-0">
-          Découvrez notre catalogue de produits
-        </h2>
-
-        <div class="flex items-center gap-4">
-          <div class="flex items-center gap-3">
-            <label for="filtre" class="text-sm text-bleu">FILTRER</label>
-            <select id="filtre" class="rounded-full py-1.5 px-4 text-sm text-bleu placeholder:text-gris focus:outline-none focus:ring-2 focus:ring-bleuclair/30 bg-white">
-              <option>Tous</option>
-              <option>Parfum</option>
-              <option>Maquillage</option>
-              <option>Visage</option>
-            </select>
-          </div>
-
-          <div class="flex gap-2">
-            <button class="text-xs px-3 py-1 border rounded-full text-bleu bg-white hover:bg-blush transition">Parfum</button>
-            <button class="text-xs px-3 py-1 border rounded-full text-bleu bg-white hover:bg-blush transition">Maquillage</button>
-            <button class="text-xs px-3 py-1 border rounded-full text-bleu bg-white hover:bg-blush transition">Visage</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- NOS PARFUMS -->
-      <section class="text-bleu mb-16 ">
-        <div class="flex items-center justify-between mb-6">
-          <h3 class="text-xl font-secondary text-bleu">Nos parfums →</h3>
-        </div>
-
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-        <article class="relative overflow-visible group ">
-          <img src="/assets/parfum1.png" alt="Collection parfums" class="w-full h-80 object-cover -mb-6 relative"/>
-
-        <div class="absolute  bottom-4 left-1/2 transform -translate-x-1/2 z-20">
-          <span class="inline-block bg-white text-xs text-bleu py-2 px-4 rounded-full transition-transform duration-300 group-hover:scale-105 shadow-sm">Parfum</span>
-        </div>
-        </article>
-
-
-
-          <article class="text-bleu text-left">
-            <img src="/assets/monoi.png" alt="Monoi Des Iles" class="w-full h-60 object-cover transition-transform duration-300 hover:scale-105"/>
-            <h4 class="mt-3 font-primary text-bleu">Monoi Des Iles</h4>
-            <p class="text-xs text-fushia">EAU DE PARFUM 30 ML</p>
-            <div class="mt-1 font-semibold">11,95€</div>
-          </article>
-
-          <article class="text-bleu text-left">
-            <img src="/assets/Feel the Air.png" alt="Feel The Air" class="w-full h-60 object-cover transition-transform duration-300 hover:scale-105"/>
-            <h4 class="mt-3 font-primary text-bleu">Feel The Air</h4>
-            <p class="text-xs text-fushia">EAU DE PARFUM 30 ML</p>
-            <div class="mt-1 font-semibold">11,95€</div>
-          </article>
-
-          <article class="text-bleu text-left">
-            <img src="/assets/cotton.webp" alt="Cotton Crush" class="w-full h-60 object-cover transition-transform duration-300 hover:scale-105"/>
-            <h4 class="mt-3 font-primary text-bleu">Cotton Crush</h4>
-            <p class="text-xs text-fushia">EAU DE PARFUM 30 ML</p>
-            <div class="mt-1 font-semibold">11,95€</div>
-          </article>
-        </div>
-      </section>
-
-
-            <!-- NOS MAQUIULLAGE -->
-      <section class="text-bleu mb-16">
-        <div class="flex items-center justify-between mb-6">
-          <h3 class="text-xl font-secondary text-bleu">Notre Maquillage →</h3>
-        </div>
-
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-          <article class="relative overflow-hidden group">
-            <img src="/assets/maquilage.png" alt="Collection parfums" class="w-full h-80 object-cover  -mb-6 z-10 relative"/>
-            <div class="absolute  bottom-4 left-1/2 transform -translate-x-1/2 z-20">
-              <span class="inline-block bg-white text-xs text-bleu py-2 px-4 rounded-full transition-transform duration-300 group-hover:scale-105 shadow-sm">Maquillage</span>
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-6 py-12 bg-white">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <!-- Product Image -->
+            <div class="relative">
+                <span class="absolute top-4 left-4 bg-white text-bleu text-xs font-primary uppercase px-4 py-1 rounded-full z-10">
+                    Parfum
+                </span>
+                <div>
+                    <img 
+                        src="/assets/MONOI.webp" 
+                        alt="Monoi Des Îles" 
+                        class="w-full h-auto object-cover"
+                    >
+                </div>
             </div>
-          </article>
 
-          <article class="text-bleu text-left">
-            <img src="/assets/All Mat Long.webp" alt="All Mat Long" class="w-full h-60 object-cover transition-transform duration-300 hover:scale-105"/>
-            <h4 class="mt-3 font-primary text-bleu">All Mat Long</h4>
-            <p class="text-xs text-fushia">ROUGE À LÈVRES LIQUIDE MAT</p>
-            <div class="mt-1 font-semibold">8,95€</div>
-          </article>
+            <!-- Product Info -->
+            <div>
+                <!-- Rating -->
+                <div class="flex items-center gap-1 mb-4">
+                    <span class="text-bleu">★</span>
+                    <span class="text-bleu">★</span>
+                    <span class="text-bleu">★</span>
+                    <span class="text-bleu">★</span>
+                    <span class="text-bleu">★</span>
+                </div>
 
-          <article class="text-bleu text-left">
-            <img src="/assets/blush.webp" alt="Blush Touch" class="w-full h-60 object-cover transition-transform duration-300 hover:scale-105"/>
-            <h4 class="mt-3 font-primary text-bleu">Blush Touch</h4>
-            <p class="text-xs text-fushia">FARD À JOUES 4,3G</p>
-            <div class="mt-1 font-semibold">6,95€</div>
-          </article>
+                <!-- Title and Price -->
+                <div class="flex items-start justify-between mb-2">
+                    <h1 class="text-4xl font-secondary text-bleu">Monoi Des Îles</h1>
+                    <span class="text-2xl font-primary text-bleu font-semibold">11,95€</span>
+                </div>
 
-          <article class="text-bleu text-left">
-            <img src="/assets/fdt.webp" alt="Perfect Matte" class="w-full h-60 object-cover transition-transform duration-300 hover:scale-105"/>
-            <h4 class="mt-3 font-primary text-bleu">Perfect Matte</h4>
-            <p class="text-xs text-fushia">FOND DE TEINT LIQUIDE 30ML</p>
-            <div class="mt-1 font-semibold">9,95€</div>
-          </article>
-        </div>
-      </section>
+                <!-- Subtitle -->
+                <p class="text-fushia font-primary text-xs uppercase font-semibold tracking-wider mb-1">
+                    EAU DE PARFUM 30ML
+                </p>
 
+                <!-- Delivery Info -->
+                <div class="space-y-1 mb-6">
+                    <p class="text-gris text-xs font-primary">
+                        <span class="uppercase">Livré 48 à 72h</span> 
+                        <span class="underline">Gratuite dès 35€ d'achat</span>
+                    </p>
+                    <p class="text-gris text-xs font-primary">
+                        <span class="uppercase">Payez en 3X sans frais</span> 
+                        <span class="underline">dès 40€ d'achat</span>
+                    </p>
+                </div>
 
+                <!-- Contenance Label -->
+                <label class="block text-bleu font-primary text-sm font-semibold mb-2">
+                    Contenance
+                </label>
 
-      <!-- VISAGE -->
-      <section class="text-bleu mb-16">
-        <div class="flex items-center justify-between mb-6">
-          <h3 class="text-xl font-secondary text-bleu">Visage →</h3>
-        </div>
+                <!-- Dropdown -->
+                <div class="relative mb-6">
+                    <select class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg appearance-none font-primary text-sm text-bleu focus:outline-none focus:border-bleu">
+                        <option>Choisir une texture</option>
+                        <option>Crème</option>
+                        <option>Crème de Nuit</option>
+                        <option>Soins</option>
+                    </select>
+                    <svg class="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-bleu pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
 
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-          <article class="relative overflow-visible group">
-            <img src="/assets/visage.png" alt="Collection parfums" class="w-full h-80 object-cover -mb-6 z-10 relative"/>
-            <div class="absolute  bottom-4 left-1/2 transform -translate-x-1/2 z-20">
-              <span class="inline-block bg-white text-xs text-bleu py-2 px-4 rounded-full transition-transform duration-300 group-hover:scale-105 shadow-sm">Visage</span>
+                <!-- Add to Cart Button -->
+                <button class="w-full bg-bleu text-white font-primary text-sm uppercase tracking-wider py-4 rounded-lg hover:bg-opacity-90 transition">
+                    Ajouter Au Panier
+                </button>
             </div>
-          </article>
-
-          <article class="text-bleu text-left">
-            <img src="/assets/creme.webp" alt="All Mat Long" class="w-full h-60 object-cover transition-transform duration-300 hover:scale-105"/>
-            <h4 class="mt-3 font-primary text-bleu">Lissante & Repulpante</h4>
-            <p class="text-xs text-fushia">CREME NETTOYANTE</p>
-            <div class="mt-1 font-semibold">5,95€</div>
-          </article>
-
-          <article class="text-bleu text-left">
-            <img src="/assets/mousse.webp" alt="Blush Touch" class="w-full h-60 object-cover transition-transform duration-300 hover:scale-105"/>
-            <h4 class="mt-3 font-primary text-bleu">Hydratation & Eclat</h4>
-            <p class="text-xs text-fushia text-bold">MOUSSE NETTOYANTE</p>
-            <div class="mt-1 font-semibold">8,95€</div>
-          </article>
-
-          <article class="text-bleu text-left">
-            <img src="/assets/gelee.webp" alt="Perfect Matte" class="w-full h-60 object-cover transition-transform duration-300 hover:scale-105"/>
-            <h4 class="mt-3 font-primary text-bleu">Purifiante & Matifiante</h4>
-            <p class="text-xs text-fushia text-bold">GELEE NETTOYANTE</p>
-            <div class="mt-1 font-semibold">7,95€</div>
-          </article>
         </div>
-      </section>
-
-
-<div class="min-h-screen flex flex-col">
-  <main class="flex-grow ">
-  </main>
+    </main>
 
 <!-- Footer -->
   <footer class="w-full bg-roseclair text-bleu font-primary px-4 sm:px-8">
@@ -287,12 +206,5 @@
       </div>
     </div>
   </footer>
-</div>
-
-
-
-
-
-
 </body>
 </html>

@@ -1,1 +1,116 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@layer base {
+    :root {
+    --clr-white: oklch(100% 0 0);           /* #FFFFFF */
+    --clr-dark: oklch(0.3894 0.0442 296.65);      /* #47405A */
+    --clr-pink: oklch(0.6406 0.2134 2.07);      /* #EC3F82 */
+    --clr-indigo: oklch(0.6693 0.1783 279.37);    /* #8184FF */
+    --clr-blush: oklch(0.8987 0.0555 4.27);      /* #FFCFD9 */
+    --clr-soft-pink: oklch(0.8138 0.0899 6.1);  /* #F5AAB9 */
+    --clr-gray: oklch(0.6913 0.0394 290.43);
+
+    --font-gotham: 'Montserrat', sans-serif;
+    --font-romie: 'Forum', serif;
+    }
+};
+
+@theme inline {
+  --color-fushia: var(--clr-pink);
+  --color-bleuclair: var(--clr-indigo);  
+  --color-bleu: var(--clr-dark);
+  --color-white: var(--clr-white); 
+  --color-roseclair: var(--clr-blush); 
+  --color-rose: var(--clr-soft-pink); 
+  --color-gris: var(--clr-gray);
+
+  --font-primary: var(--font-gotham); 
+  --font-secondary: var(--font-romie); 
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--clr-white);
+}
+
+main {
+  flex: 1;
+}
+
+h1, h2, h3, h4 {
+  color: var(--clr-white);
+  font-family: var(--font-romie);
+}
+
+.text-pink {
+  color: var(--clr-pink);
+}
+
+.text-indigo {
+  color: var(--clr-indigo);
+}
+
+.text-blush {
+  color: var(--clr-blush);
+}
+
+.text-soft-pink {
+  color: var(--clr-soft-pink);
+}
+
+.bg-pink {
+  background-color: var(--clr-pink);
+}
+
+.bg-indigo {
+  background-color: var(--clr-indigo);
+}
+
+.bg-blush {
+  background-color: var(--clr-blush);
+}
+
+.bg-soft-pink {
+  background-color: var(--clr-soft-pink);
+}
+
+.bg-dark {
+  background-color: var(--clr-dark);
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-gotham);
+}
+
+.text-bleu {
+  color: var(--clr-dark);
+}
+
+.text-bleuclair {
+  color: var(--clr-indigo);
+}
+
+.text-fushia {
+  color: var(--clr-pink);
+}
+
+.bg-blush {
+  background-color: var(--clr-blush);
+}
+
+.bg-bleu {
+  background-color: var(--clr-dark);
+}
