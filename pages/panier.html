@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>produit</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="../src/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>panier</title>
+ <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
 <!-- Header principal -->
@@ -56,11 +56,9 @@
       </button>
 
       <button aria-label="cart" class=" hover:text-pink">
-        <a href="./panier.html">
         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M20.625 5.4375H15.8125V5C15.8125 3.72365 15.3055 2.49957 14.403 1.59705C13.5004 0.69453 12.2764 0.1875 11 0.1875C9.72365 0.1875 8.49957 0.69453 7.59705 1.59705C6.69453 2.49957 6.1875 3.72365 6.1875 5V5.4375H1.375C1.0269 5.4375 0.693064 5.57578 0.446922 5.82192C0.200781 6.06806 0.0625 6.4019 0.0625 6.75V19.875C0.0625 20.2231 0.200781 20.5569 0.446922 20.8031C0.693064 21.0492 1.0269 21.1875 1.375 21.1875H20.625C20.9731 21.1875 21.3069 21.0492 21.5531 20.8031C21.7992 20.5569 21.9375 20.2231 21.9375 19.875V6.75C21.9375 6.4019 21.7992 6.06806 21.5531 5.82192C21.3069 5.57578 20.9731 5.4375 20.625 5.4375ZM7.0625 5C7.0625 3.95571 7.47734 2.95419 8.21577 2.21577C8.95419 1.47734 9.95571 1.0625 11 1.0625C12.0443 1.0625 13.0458 1.47734 13.7842 2.21577C14.5227 2.95419 14.9375 3.95571 14.9375 5V5.4375H7.0625V5ZM21.0625 19.875C21.0625 19.991 21.0164 20.1023 20.9344 20.1844C20.8523 20.2664 20.741 20.3125 20.625 20.3125H1.375C1.25897 20.3125 1.14769 20.2664 1.06564 20.1844C0.983594 20.1023 0.9375 19.991 0.9375 19.875V6.75C0.9375 6.63397 0.983594 6.52269 1.06564 6.44064C1.14769 6.35859 1.25897 6.3125 1.375 6.3125H6.1875V8.5C6.1875 8.61603 6.23359 8.72731 6.31564 8.80936C6.39769 8.89141 6.50897 8.9375 6.625 8.9375C6.74103 8.9375 6.85231 8.89141 6.93436 8.80936C7.01641 8.72731 7.0625 8.61603 7.0625 8.5V6.3125H14.9375V8.5C14.9375 8.61603 14.9836 8.72731 15.0656 8.80936C15.1477 8.89141 15.259 8.9375 15.375 8.9375C15.491 8.9375 15.6023 8.89141 15.6844 8.80936C15.7664 8.72731 15.8125 8.61603 15.8125 8.5V6.3125H20.625C20.741 6.3125 20.8523 6.35859 20.9344 6.44064C21.0164 6.52269 21.0625 6.63397 21.0625 6.75V19.875Z" fill="#8184FF"/>
         </svg>
-      </a>
       </button>
     </div>
   </div>
@@ -76,84 +74,51 @@
 </header>
 
 
-    <!-- Main Content -->
-    <main class="max-w-7xl mx-auto px-6 py-12 bg-white">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <!-- Product Image -->
-            <div class="relative">
-                <span class="absolute top-4 left-4 bg-white text-bleu text-xs font-primary uppercase px-4 py-1 rounded-full z-10">
-                    Parfum
-                </span>
-                <div>
-                    <img 
-                        src="/assets/MONOI.webp" 
-                        alt="Monoi Des Îles" 
-                        class="w-full h-auto object-cover"
-                    >
+
+<div class="min-h-screen p-4 my-16 bg-white flex justify-center items-start pt-12">
+    <div class="w-full max-w-2xl bg-[#FFE7EC] p-10 shadow-2xl rounded-xl">
+
+        <section class="mb-10">
+            <h3 class="text-base font-primary font-bold tracking-widest text-bleu uppercase mb-4">PANIER</h3>
+            <div class="h-0.5 bg-fushia w-full mb-8"></div>
+            <hr class="border-t-2 border-pink-500 my-10">
+
+            <div class="flex items-center space-x-8">
+                <img src="/assets/MONOI.webp" alt="Monoi Des Iles - 50 ML" class="w-16 h-16 object-cover rounded-sm border border-gray-100"/>
+                <p class="text-lg font-primary text-bleu">Monoi Des Iles - 50 ML</p>
+            </div>
+        </section>
+
+
+        <section>
+            <h3 class="text-base font-primary font-bold tracking-widest text-bleu uppercase mb-4">TOTAL PANIER</h3>
+            <div class="h-0.5 bg-fushia w-full mb-8"></div>
+            <hr class="border-t-2 border-pink-500 my-10">
+
+            <div class="text-lg space-y-4 font-primary">
+                <div class="flex justify-between items-center">
+                    <span class="text-bleu">Sous-Total</span>
+                    <span class="font-semibold text-bleu">11.95€</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <span class="text-bleu">Expéditions</span>
+                    <span class="text-base text-gris">Livraison À ...</span> 
+                </div>
+                <div class="flex justify-between items-center pt-4 text-xl">
+                    <span class="font-bold text-bleu">Total</span>
+                    <span class="font-extrabold text-bleu">11.95€</span>
                 </div>
             </div>
 
-            <!-- Product Info -->
-            <div>
-                <!-- Rating -->
-                <div class="flex items-center gap-1 mb-4">
-                    <span class="text-bleu">★</span>
-                    <span class="text-bleu">★</span>
-                    <span class="text-bleu">★</span>
-                    <span class="text-bleu">★</span>
-                    <span class="text-bleu">★</span>
-                </div>
+            <button class="mt-10 w-full py-5 bg-bleu hover:opacity-90 text-white font-primary font-bold text-lg rounded-full shadow-lg transition duration-150 ease-in-out">
+                VALIDER LA COMMANDE
+            </button>
+        </section>
+    </div>
+</div>
 
-                <!-- Title and Price -->
-                <div class="flex items-start justify-between mb-2">
-                    <h1 class="text-4xl font-secondary text-bleu">Monoi Des Îles</h1>
-                    <span class="text-2xl font-primary text-bleu font-semibold">11,95€</span>
-                </div>
 
-                <!-- Subtitle -->
-                <p class="text-fushia font-primary text-xs uppercase font-semibold tracking-wider mb-1">
-                    EAU DE PARFUM 30ML
-                </p>
-
-                <!-- Delivery Info -->
-                <div class="space-y-1 mb-6">
-                    <p class="text-gray-500 text-xs font-primary">
-                        <span class="uppercase">Livré 48 à 72h</span> 
-                        <span class="underline">Gratuite dès 35€ d'achat</span>
-                    </p>
-                    <p class="text-gray-500 text-xs font-primary">
-                        <span class="uppercase">Payez en 3X sans frais</span> 
-                        <span class="underline">dès 40€ d'achat</span>
-                    </p>
-                </div>
-
-                <!-- Contenance Label -->
-                <label class="block text-bleu font-primary text-sm font-semibold mb-2">
-                    Contenance
-                </label>
-
-                <!-- Dropdown -->
-                <div class="relative mb-6">
-                    <select class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg appearance-none font-primary text-sm text-bleu focus:outline-none focus:border-bleu">
-                        <option>Choisir une texture</option>
-                        <option>Crème</option>
-                        <option>Crème de Nuit</option>
-                        <option>Soins</option>
-                    </select>
-                    <svg class="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-bleu pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                </div>
-
-                <!-- Add to Cart Button -->
-                <button class="w-full bg-bleu text-white font-primary text-sm uppercase tracking-wider py-4 rounded-lg hover:bg-opacity-90 transition">
-                    Ajouter Au Panier
-                </button>
-            </div>
-        </div>
-    </main>
-
-<!-- FOOTER -->
+  <!-- FOOTER -->
 <footer class="w-full bg-blush text-bleu font-primary px-4 sm:px-8">
 
     <div class="flex justify-center gap-6 py-6">

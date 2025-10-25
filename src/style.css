@@ -17,7 +17,7 @@
     }
 };
 
-:root[data-theme="inline"] {
+@theme inline {
   --color-fushia: var(--clr-pink);
   --color-bleuclair: var(--clr-indigo);  
   --color-bleu: var(--clr-dark);
@@ -42,6 +42,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  color: var(--clr-soft-pink); 
   background-color: var(--clr-white);
 }
 
@@ -51,7 +52,7 @@ main {
 
 h1, h2, h3, h4 {
   color: var(--clr-white);
-  font-family: var(--font-romie);
+  font-family: var(--font-gotham);
 }
 
 .text-pink {
@@ -114,3 +115,5 @@ button {
 .bg-bleu {
   background-color: var(--clr-dark);
 }
+
+

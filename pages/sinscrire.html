@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>produit</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="../src/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sinscrire</title>
+ <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
 <!-- Header principal -->
@@ -47,12 +47,10 @@
       </button>
 
       <button aria-label="account" class=" hover:text-pink">
-        <a href="./sinscrire.html">
         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1 18.5C1 17.1739 1.52678 15.9021 2.46447 14.9645C3.40215 14.0268 4.67392 13.5 6 13.5H16C17.3261 13.5 18.5979 14.0268 19.5355 14.9645C20.4732 15.9021 21 17.1739 21 18.5C21 19.163 20.7366 19.7989 20.2678 20.2678C19.7989 20.7366 19.163 21 18.5 21H3.5C2.83696 21 2.20107 20.7366 1.73223 20.2678C1.26339 19.7989 1 19.163 1 18.5Z" stroke="#8184FF" stroke-linejoin="round"/>
         <path d="M11 8.5C13.0711 8.5 14.75 6.82107 14.75 4.75C14.75 2.67893 13.0711 1 11 1C8.92893 1 7.25 2.67893 7.25 4.75C7.25 6.82107 8.92893 8.5 11 8.5Z" stroke="#8184FF"/>
         </svg>
-      </a>
       </button>
 
       <button aria-label="cart" class=" hover:text-pink">
@@ -76,84 +74,128 @@
 </header>
 
 
-    <!-- Main Content -->
-    <main class="max-w-7xl mx-auto px-6 py-12 bg-white">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <!-- Product Image -->
-            <div class="relative">
-                <span class="absolute top-4 left-4 bg-white text-bleu text-xs font-primary uppercase px-4 py-1 rounded-full z-10">
-                    Parfum
-                </span>
-                <div>
-                    <img 
-                        src="/assets/MONOI.webp" 
-                        alt="Monoi Des Îles" 
-                        class="w-full h-auto object-cover"
+
+<div class="flex justify-center p-4 my-16" style="background-color: var(--clr-white);">
+    <div class="w-full max-w-xl p-8 sm:p-12 rounded-3xl shadow-xl bg-[#FFE7EC]">
+        
+        <h1 class="text-3xl sm:text-2xl font-primary font-bold text-bleu mb-8">
+            S'inscrire
+        </h1>
+
+        <form class="space-y-6">
+            
+            <div class="flex flex-col sm:flex-row sm:space-x-4 space-y-6 sm:space-y-0">
+                <div class="flex-1">
+                    <label for="nom" class="block text-bleu font-primary mb-2 text-lg">
+                        Nom <span class="text-fushia">*</span>
+                    </label>
+                    <input type="text" id="nom" name="nom" required
+                           class="w-full p-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-fushia focus:border-fushia"
+                           style="font-family: var(--font-gotham);"
+                    >
+                </div>
+                
+                <div class="flex-1">
+                    <label for="prenom" class="block text-bleu font-primary mb-2 text-lg">
+                        Prénom <span class="text-fushia">*</span>
+                    </label>
+                    <input type="text" id="prenom" name="prenom" required
+                           class="w-full p-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-fushia focus:border-fushia"
+                           style="font-family: var(--font-gotham);"
                     >
                 </div>
             </div>
 
-            <!-- Product Info -->
             <div>
-                <!-- Rating -->
-                <div class="flex items-center gap-1 mb-4">
-                    <span class="text-bleu">★</span>
-                    <span class="text-bleu">★</span>
-                    <span class="text-bleu">★</span>
-                    <span class="text-bleu">★</span>
-                    <span class="text-bleu">★</span>
-                </div>
-
-                <!-- Title and Price -->
-                <div class="flex items-start justify-between mb-2">
-                    <h1 class="text-4xl font-secondary text-bleu">Monoi Des Îles</h1>
-                    <span class="text-2xl font-primary text-bleu font-semibold">11,95€</span>
-                </div>
-
-                <!-- Subtitle -->
-                <p class="text-fushia font-primary text-xs uppercase font-semibold tracking-wider mb-1">
-                    EAU DE PARFUM 30ML
-                </p>
-
-                <!-- Delivery Info -->
-                <div class="space-y-1 mb-6">
-                    <p class="text-gray-500 text-xs font-primary">
-                        <span class="uppercase">Livré 48 à 72h</span> 
-                        <span class="underline">Gratuite dès 35€ d'achat</span>
-                    </p>
-                    <p class="text-gray-500 text-xs font-primary">
-                        <span class="uppercase">Payez en 3X sans frais</span> 
-                        <span class="underline">dès 40€ d'achat</span>
-                    </p>
-                </div>
-
-                <!-- Contenance Label -->
-                <label class="block text-bleu font-primary text-sm font-semibold mb-2">
-                    Contenance
+                <label for="email" class="block text-bleu font-primary mb-2 text-lg">
+                    Adresse Mail <span class="text-fushia">*</span>
                 </label>
+                <input type="email" id="email" name="email" required
+                       class="w-full p-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-fushia focus:border-fushia"
+                       style="font-family: var(--font-gotham);"
+                >
+            </div>
 
-                <!-- Dropdown -->
-                <div class="relative mb-6">
-                    <select class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg appearance-none font-primary text-sm text-bleu focus:outline-none focus:border-bleu">
-                        <option>Choisir une texture</option>
-                        <option>Crème</option>
-                        <option>Crème de Nuit</option>
-                        <option>Soins</option>
-                    </select>
-                    <svg class="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-bleu pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                </div>
+            <div>
+                <label for="adresse" class="block text-bleu font-primary mb-2 text-lg">
+                    Adresse Postale
+                </label>
+                <input type="text" id="adresse" name="adresse"
+                       class="w-full p-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-fushia focus:border-fushia"
+                       style="font-family: var(--font-gotham);"
+                >
+            </div>
 
-                <!-- Add to Cart Button -->
-                <button class="w-full bg-bleu text-white font-primary text-sm uppercase tracking-wider py-4 rounded-lg hover:bg-opacity-90 transition">
-                    Ajouter Au Panier
+            <div>
+                <label for="telephone" class="block text-bleu font-primary mb-2 text-lg">
+                    Téléphone <span class="text-fushia">*</span>
+                </label>
+                <input type="tel" id="telephone" name="telephone" required
+                       class="w-full p-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-fushia focus:border-fushia sm:w-2/3 md:w-1/2"
+                       style="font-family: var(--font-gotham);"
+                >
+            </div>
+
+            <p class="text-bleu font-primary text-sm pt-4 pb-6">
+                un lien permettant de définir un nouveau mot de passe sera envoyé à votre adresse e-mail.
+            </p>
+
+            <div class="flex justify-center">
+                <button type="submit"
+                        class="px-8 py-3 bg-fushia text-white font-primary font-bold text-xl rounded-full shadow-lg transition duration-200 hover:opacity-90 focus:outline-none focus:ring-4 focus:ring-fushia focus:ring-opacity-50"
+                        style="background-color: var(--clr-pink);"
+                >
+                    S'inscrire
                 </button>
             </div>
-        </div>
-    </main>
+        </form>
+    </div>
+</div>
 
-<!-- FOOTER -->
+
+<div class="flex justify-center p-4 my-16" style="background-color: var(--clr-white);">
+    <div class="w-full max-w-xl p-8 sm:p-12 rounded-3xl shadow-xl bg-[#FFE7EC]">
+        
+        <h1 class="text-3xl sm:text-2xl font-primary font-bold text-bleu mb-12">
+            Connexion
+        </h1>
+
+        <form class="space-y-8">
+            
+            <div>
+                <label for="identifiant" class="block text-bleu font-primary mb-2 text-lg">
+                    Identifiant Ou E-Mail <span class="text-fushia">*</span>
+                </label>
+                <input type="text" id="identifiant" name="identifiant" required
+                       class="w-full p-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-fushia focus:border-fushia"
+                       style="font-family: var(--font-gotham);"
+                >
+            </div>
+
+            <div>
+                <label for="mot_de_passe" class="block text-bleu font-primary mb-2 text-lg">
+                    Mot De Passe <span class="text-fushia">*</span>
+                </label>
+                <input type="password" id="mot_de_passe" name="mot_de_passe" required
+                       class="w-full p-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-fushia focus:border-fushia"
+                       style="font-family: var(--font-gotham);"
+                >
+            </div>
+
+            <div class="flex justify-center pt-4">
+                <button type="submit"
+                        class="px-8 py-3 bg-fushia text-white font-primary font-bold text-xl rounded-full shadow-lg transition duration-200 hover:opacity-90 focus:outline-none focus:ring-4 focus:ring-fushia focus:ring-opacity-50"
+                        style="background-color: var(--clr-pink);"
+                >
+                    se connecter
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+  <!-- FOOTER -->
 <footer class="w-full bg-blush text-bleu font-primary px-4 sm:px-8">
 
     <div class="flex justify-center gap-6 py-6">
